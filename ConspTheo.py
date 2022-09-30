@@ -17,8 +17,10 @@ data3=data2.replace(':', '')
 data4=data3.replace("'", '')
 data5=data4.replace('?', '')
 data6=data5.replace('!', '')
+data7=data6.replace('"', '')
+data8=data7.replace('-', '')
 #print(data6)
-dataList=data6.split()
+dataList=data8.split()
 #print(dataList)
 
 # removing stop-words from a 1st list
@@ -44,8 +46,10 @@ data3_1=data2_1.replace(':', '')
 data4_1=data3_1.replace("'", '')
 data5_1=data4_1.replace('?', '')
 data6_1=data5_1.replace('!', '')
+data7_1=data6_1.replace('"', '')
+data8_1=data7_1.replace('-', '')
 #print(data6_1)
-dataList_1=data6_1.split()
+dataList_1=data8_1.split()
 #print(dataList_1)
 def remove_words_1(list1_1, stop_words_1):
     for word_1 in list(list1_1):
